@@ -22,7 +22,7 @@ function Contactos() {
 	// find all contacts with 'Bob' in any name field
 	var options = new ContactFindOptions();
 	options.filter = "Prueba";
-    options.mulple = true;
+    //options.mulple = true;
 	var fields = ["displayName", "name"];
 	navigator.contacts.find(fields, leidos, onError1, options);
 }
@@ -35,6 +35,7 @@ function leidos(contacts) {
 		$('#cMostrar').html('');
 	else
 		$('#cMostrar').html('<li>Sin Leer Contactos</li>');
+	alert(contacts.length);
 	for (var i = 0; i < contacts.length; i++) {
 		//var tel = contacts[i].phoneNumbers[0].value;
 		var nombre = contacts[i].displayname || contacts[i].nickname;
