@@ -23,7 +23,7 @@ function Contactos() {
 	var options = new ContactFindOptions();
 	options.filter = "";
     options.mulple = true;
-	var fields = ["displayName"];
+	var fields = ["name"];
 	navigator.contacts.find(fields, leidos, onError1, options);
 }
 
