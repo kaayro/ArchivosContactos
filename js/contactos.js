@@ -21,9 +21,9 @@ function Contactos() {
 	//alert('1');
 	// find all contacts with 'Bob' in any name field
 	var options = new ContactFindOptions();
-	options.filter = "c";
+	options.filter = "Pueba";
     options.mulple = true;
-	var fields = ["name"];
+	var fields = ["displayName", "name"];
 	navigator.contacts.find(fields, leidos, onError1, options);
 }
 
