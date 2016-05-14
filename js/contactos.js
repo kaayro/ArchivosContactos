@@ -29,7 +29,7 @@ function Contactos() {
 // onSuccess: Get a snapshot of the current contacts
 
 function leidos(contacts) {
-	//alert(contacts.length);
+	alert(contacts.length);
 	if(contacts.length>0)
 		$('#cMostrar').html('');
 	else
